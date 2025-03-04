@@ -1,0 +1,55 @@
+
+----- Thread Dump at 2025-03-04 11:33:58 -----
+
+Thread Name: MainThread (ID: 19236)
+  File "client.py", line 1957, in <module>
+  File "client.py", line 1953, in main
+  File "client.py", line 877, in start
+  File "tkinter\__init__.py", line 1420, in mainloop
+
+Thread Name: Thread-3 (ID: 21136)
+  File "threading.py", line 890, in _bootstrap
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "client.py", line 1622, in udp_listener_thread
+
+Thread Name: Thread-4 (ID: 18172)
+  File "threading.py", line 890, in _bootstrap
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "engineio\client.py", line 540, in _write_loop
+  File "queue.py", line 179, in get
+  File "threading.py", line 306, in wait
+
+Thread Name: Thread-5 (ID: 27420)
+  File "threading.py", line 890, in _bootstrap
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "engineio\client.py", line 492, in _read_loop_websocket
+  File "websocket\_core.py", line 362, in recv
+  File "websocket\_core.py", line 385, in recv_data
+  File "websocket\_core.py", line 406, in recv_data_frame
+  File "websocket\_core.py", line 445, in recv_frame
+  File "websocket\_abnf.py", line 338, in recv_frame
+  File "websocket\_abnf.py", line 294, in recv_header
+  File "websocket\_abnf.py", line 373, in recv_strict
+  File "websocket\_core.py", line 529, in _recv
+  File "websocket\_socket.py", line 108, in recv
+  File "websocket\_socket.py", line 87, in _recv
+  File "ssl.py", line 1226, in recv
+  File "ssl.py", line 1101, in read
+
+Thread Name: Thread-8 (ID: 25220)
+  File "threading.py", line 890, in _bootstrap
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "client.py", line 1668, in background_tasks
+  File "psutil\__init__.py", line 1749, in cpu_percent
+
+Thread Name: Thread-9 (ID: 8680)
+  File "threading.py", line 890, in _bootstrap
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "client.py", line 1878, in loop
+  File "client.py", line 1868, in dump_thread_info
+----- End Dump -----
