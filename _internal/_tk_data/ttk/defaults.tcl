@@ -28,10 +28,12 @@ namespace eval ttk::theme::default {
 	    -foreground 	$colors(-foreground) \
 	    -troughcolor 	$colors(-darker) \
 	    -font 		TkDefaultFont \
+	    -selectborderwidth	1 \
 	    -selectbackground	$colors(-selectbg) \
 	    -selectforeground	$colors(-selectfg) \
 	    -insertwidth 	1 \
-	    -indicatordiameter	10
+	    -indicatordiameter	10 \
+	    ;
 
 	ttk::style map "." -background \
 	    [list disabled $colors(-frame)  active $colors(-activebg)]
@@ -41,7 +43,7 @@ namespace eval ttk::theme::default {
 	ttk::style configure TButton \
 	    -anchor center -padding "3 3" -width -9 \
 	    -relief raised -shiftrelief 1
-	ttk::style map TButton -relief [list {!disabled pressed} sunken]
+	ttk::style map TButton -relief [list {!disabled pressed} sunken] 
 
 	ttk::style configure TCheckbutton \
 	    -indicatorcolor "#ffffff" -indicatorrelief sunken -padding 1
@@ -66,26 +68,19 @@ namespace eval ttk::theme::default {
 	    [list alternate raised]
 
 	ttk::style configure TMenubutton \
-	    -relief raised -indicatorborderwidth 1 -padding "10 3"
+	    -relief raised -padding "10 3"
 
 	ttk::style configure TEntry \
-	    -fieldbackground white -padding 1 \
-	    -focuswidth 2 -focuscolor $colors(-selectbg)
+	    -relief sunken -fieldbackground white -padding 1
 	ttk::style map TEntry -fieldbackground \
 	    [list readonly $colors(-frame) disabled $colors(-frame)]
 
-	ttk::style configure TCombobox \
-	    -arrowsize 12 -arrowcolor black \
-	    -fieldbackground white -padding 1 \
-	    -focuswidth 1 -focuscolor $colors(-selectbg)
+	ttk::style configure TCombobox -arrowsize 12 -padding 1
 	ttk::style map TCombobox -fieldbackground \
 	    [list readonly $colors(-frame) disabled $colors(-frame)] \
 	    -arrowcolor [list disabled $colors(-disabledfg)]
 
-	ttk::style configure TSpinbox \
-	    -arrowsize 10 -arrowcolor black \
-	    -fieldbackground white -padding {2 0 10 0} \
-	    -focuswidth 1 -focuscolor $colors(-selectbg)
+	ttk::style configure TSpinbox -arrowsize 10 -padding {2 0 10 0}
 	ttk::style map TSpinbox -fieldbackground \
 	    [list readonly $colors(-frame) disabled $colors(-frame)] \
 	    -arrowcolor [list disabled $colors(-disabledfg)]
@@ -99,28 +94,27 @@ namespace eval ttk::theme::default {
 	    -arrowcolor [list disabled $colors(-disabledfg)]
 
 	ttk::style configure TScale \
-	    -sliderrelief raised -sliderborderwidth 1
+	    -sliderrelief raised
 	ttk::style configure TProgressbar \
 	    -background $colors(-selectbg)
 
 	ttk::style configure TNotebook.Tab \
 	    -padding {4 2} -background $colors(-darker)
 	ttk::style map TNotebook.Tab \
-	    -background [list selected $colors(-frame)] \
-	    -highlight [list selected 1] \
-	    -highlightcolor [list selected $colors(-selectbg)]
+	    -background [list selected $colors(-frame)]
 
 	# Treeview.
 	#
 	ttk::style configure Heading -font TkHeadingFont -relief raised
 	ttk::style configure Treeview \
 	    -background $colors(-window) \
-	    -foreground $colors(-text) \
-	    -focuswidth 1 -focuscolor $colors(-selectbg)
+	    -foreground $colors(-text) ;
 	ttk::style map Treeview \
 	    -background [list disabled $colors(-frame)\
+				{!disabled !selected} $colors(-window) \
 				selected $colors(-selectbg)] \
 	    -foreground [list disabled $colors(-disabledfg) \
+				{!disabled !selected} black \
 				selected $colors(-selectfg)]
 
 	# Combobox popdown frame
@@ -135,13 +129,12 @@ namespace eval ttk::theme::default {
 	#
 	ttk::style layout Toolbutton {
 	    Toolbutton.border -children {
-		Toolbutton.focus -children {
-		    Toolbutton.padding -children {
-			Toolbutton.label
-		    }
+		Toolbutton.padding -children {
+		    Toolbutton.label
 		}
 	    }
 	}
+
 	ttk::style configure Toolbutton \
 	    -padding 2 -relief flat
 	ttk::style map Toolbutton -relief \
