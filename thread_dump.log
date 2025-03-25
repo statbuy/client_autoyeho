@@ -1,0 +1,231 @@
+
+----- Thread Dump at 2025-03-25 22:02:25 -----
+
+Thread Name: MainThread (ID: 8628)
+  File "Stage\Client\client.py", line 1921, in <module>
+  File "Stage\Client\client.py", line 1917, in main
+  File "Stage\Client\client.py", line 833, in start
+  File "tkinter\__init__.py", line 1599, in mainloop
+
+Thread Name: Thread-1 (priority_worker) (ID: 11404)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 143, in priority_worker
+  File "queue.py", line 202, in get
+  File "threading.py", line 359, in wait
+
+Thread Name: Thread-2 (loop) (ID: 13224)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 532, in loop
+
+Thread Name: Thread-3 (loop) (ID: 13304)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 526, in loop
+  File "auto_updater.py", line 480, in download_and_install_update
+  File "auto_updater.py", line 290, in _download_update
+  File "http\client.py", line 473, in read
+  File "http\client.py", line 597, in _read_chunked
+  File "http\client.py", line 577, in _get_chunk_left
+  File "http\client.py", line 642, in _safe_read
+  File "socket.py", line 719, in readinto
+  File "ssl.py", line 1304, in recv_into
+  File "ssl.py", line 1138, in read
+
+Thread Name: Thread-4 (udp_listener_thread) (ID: 10880)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1632, in udp_listener_thread
+
+Thread Name: Thread-5 (_write_loop) (ID: 22604)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 540, in _write_loop
+  File "queue.py", line 213, in get
+  File "threading.py", line 363, in wait
+
+Thread Name: Thread-6 (_read_loop_websocket) (ID: 12312)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 492, in _read_loop_websocket
+  File "websocket\_core.py", line 362, in recv
+  File "websocket\_core.py", line 385, in recv_data
+  File "websocket\_core.py", line 406, in recv_data_frame
+  File "websocket\_core.py", line 445, in recv_frame
+  File "websocket\_abnf.py", line 338, in recv_frame
+  File "websocket\_abnf.py", line 294, in recv_header
+  File "websocket\_abnf.py", line 373, in recv_strict
+  File "websocket\_core.py", line 529, in _recv
+  File "websocket\_socket.py", line 108, in recv
+  File "websocket\_socket.py", line 87, in _recv
+  File "ssl.py", line 1285, in recv
+  File "ssl.py", line 1140, in read
+
+Thread Name: Thread-9 (background_tasks) (ID: 972)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1740, in background_tasks
+
+Thread Name: Thread-10 (loop) (ID: 3656)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1827, in loop
+  File "Stage\Client\client.py", line 1817, in dump_thread_info
+----- End Dump -----
+
+----- Thread Dump at 2025-03-25 22:02:46 -----
+
+Thread Name: MainThread (ID: 20584)
+  File "Stage\Client\client.py", line 1921, in <module>
+  File "Stage\Client\client.py", line 1917, in main
+  File "Stage\Client\client.py", line 833, in start
+  File "tkinter\__init__.py", line 1599, in mainloop
+
+Thread Name: Thread-1 (priority_worker) (ID: 22284)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 143, in priority_worker
+  File "queue.py", line 202, in get
+  File "threading.py", line 359, in wait
+
+Thread Name: Thread-2 (loop) (ID: 10016)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 532, in loop
+
+Thread Name: Thread-3 (loop) (ID: 7904)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 532, in loop
+
+Thread Name: Thread-4 (udp_listener_thread) (ID: 18624)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1632, in udp_listener_thread
+
+Thread Name: Thread-5 (_write_loop) (ID: 21168)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 540, in _write_loop
+  File "queue.py", line 213, in get
+  File "threading.py", line 363, in wait
+
+Thread Name: Thread-6 (_read_loop_websocket) (ID: 10588)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 492, in _read_loop_websocket
+  File "websocket\_core.py", line 362, in recv
+  File "websocket\_core.py", line 385, in recv_data
+  File "websocket\_core.py", line 406, in recv_data_frame
+  File "websocket\_core.py", line 445, in recv_frame
+  File "websocket\_abnf.py", line 338, in recv_frame
+  File "websocket\_abnf.py", line 294, in recv_header
+  File "websocket\_abnf.py", line 373, in recv_strict
+  File "websocket\_core.py", line 529, in _recv
+  File "websocket\_socket.py", line 108, in recv
+  File "websocket\_socket.py", line 87, in _recv
+  File "ssl.py", line 1285, in recv
+  File "ssl.py", line 1140, in read
+
+Thread Name: Thread-9 (background_tasks) (ID: 17968)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1740, in background_tasks
+
+Thread Name: Thread-10 (loop) (ID: 22760)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1827, in loop
+  File "Stage\Client\client.py", line 1817, in dump_thread_info
+----- End Dump -----
+
+----- Thread Dump at 2025-03-25 22:03:04 -----
+
+Thread Name: MainThread (ID: 3704)
+  File "Stage\Client\client.py", line 1921, in <module>
+  File "Stage\Client\client.py", line 1917, in main
+  File "Stage\Client\client.py", line 833, in start
+  File "tkinter\__init__.py", line 1599, in mainloop
+
+Thread Name: Thread-1 (priority_worker) (ID: 22572)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 143, in priority_worker
+  File "queue.py", line 202, in get
+  File "threading.py", line 359, in wait
+
+Thread Name: Thread-2 (loop) (ID: 9324)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 532, in loop
+
+Thread Name: Thread-3 (loop) (ID: 3336)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "auto_updater.py", line 532, in loop
+
+Thread Name: Thread-4 (udp_listener_thread) (ID: 15176)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1632, in udp_listener_thread
+
+Thread Name: Thread-5 (_write_loop) (ID: 9100)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 540, in _write_loop
+  File "queue.py", line 213, in get
+  File "threading.py", line 363, in wait
+
+Thread Name: Thread-6 (_read_loop_websocket) (ID: 21288)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "engineio\client.py", line 492, in _read_loop_websocket
+  File "websocket\_core.py", line 362, in recv
+  File "websocket\_core.py", line 385, in recv_data
+  File "websocket\_core.py", line 406, in recv_data_frame
+  File "websocket\_core.py", line 445, in recv_frame
+  File "websocket\_abnf.py", line 338, in recv_frame
+  File "websocket\_abnf.py", line 294, in recv_header
+  File "websocket\_abnf.py", line 373, in recv_strict
+  File "websocket\_core.py", line 529, in _recv
+  File "websocket\_socket.py", line 108, in recv
+  File "websocket\_socket.py", line 87, in _recv
+  File "ssl.py", line 1285, in recv
+  File "ssl.py", line 1140, in read
+
+Thread Name: Thread-9 (background_tasks) (ID: 4856)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1740, in background_tasks
+
+Thread Name: Thread-10 (loop) (ID: 8636)
+  File "threading.py", line 1012, in _bootstrap
+  File "threading.py", line 1041, in _bootstrap_inner
+  File "threading.py", line 992, in run
+  File "Stage\Client\client.py", line 1827, in loop
+  File "Stage\Client\client.py", line 1817, in dump_thread_info
+----- End Dump -----
