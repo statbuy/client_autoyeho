@@ -1,0 +1,16 @@
+ZARARADIO V1.6.2
+================
+
+© ZaraSoft 2008. Todos los derechos reservados.
+
+*Este programa es GRATUITO y está prohibida su venta, tanto de forma individual como en paquetes de programas.
+*Este programa se proporciona "tal y como es", sin ninguna garantía sobre su funcionamiento.
+*ZaraSoft no se hace responsable de daños económicos ni de ningún otro tipo derivados de la utilización de este programa.
+*Queda prohibido el alquiler, la venta, la distribución y el préstamo de este programa entero o alguna de sus partes, es decir, cualquier fichero del programa, sin consentimiento previo de su autor.
+*La prohibición anterior incluye el hecho de "regalar" ZaraRadio por hacer una compra.
+*No está permitido el desensamblado ni la ingeniería inversa.
+*Queda totalmente prohibido cobrar o realizar cualquier actividad lucrativa en concepto de soporte técnico y/o distribución del programa.
+*Todas las imágenes y elementos gráficos del programa han sido creados por el autor del mismo o utilizados con el consentimiento de sus respectivos autores. Queda prohibido utilizar imágenes y/o elementos gráficos de ZaraRadio para otros programas, así como crear nuevas imágenes a partir de las originales.
+*Con la instalación y/o uso del programa, el usuario admite haber leído y comprendido esta licencia y acepta su cumplimiento. 
+
+Zaragoza. 2008.
