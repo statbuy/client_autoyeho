@@ -1,4 +1,0 @@
-Version: 1.6.2
-File: c:/wxWidgets-2.6.3/include/wx/dynarray.h  Line: 812
-Cond: uiIndex < m_nCount
-
