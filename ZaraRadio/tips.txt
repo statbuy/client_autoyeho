@@ -1,0 +1,12 @@
+You shouldn't disable these tips. Here, you will find answers to common questions.
+ZaraRadio is a free program to automate radio stations. If you find bugs, you can send a report to: zararadio@yahoo.es
+In order to modify a jingle on the bottom bar, you can drop files from the explorer tree to the buttons of the bar.
+When dragging files in the list, if you keep the CONTROL key pressed, the file is copied rather than moved.
+Some programs create emulated sound devices, which can generate problems with ZaraRadio. Make sure that, in the Outputs tab of the Options dialog, the outputs you are using are not emulated.
+Do you want to translate ZaraRadio to your language? If the answer is yes, then just go to zararadio.com and download the translation kit.
+You can download several time announcement sets for free. To download them, just go to www.tuemites.com.
+You can set the overlap time on each file by appending ~time_in_seconds to the file name.
+You can replace automatically the event list by scheduling an EVT file.
+If you have questions, you can visit our forum at www.zararadio.com/foro.
+The random track feature doesn't repeat the songs until all of them have been played.
+In order to connect with an on-line radio, go to Playlist > Add internet stream. You have to type the address of the radio in the URL field, for example http://123.456.789.012:8080 (this URL is not real).
